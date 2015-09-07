@@ -1,5 +1,5 @@
 $(".better").click(function(){
-  $("h1").toggle(2000,"swing");
+  $("h1").fadeToggle( "fast", "linear" );
   $(this).toggle();
   $(".worse").toggle();
 });
@@ -11,4 +11,5 @@ $(".worse").click(function(){
   $("h1").toggle(2000,"swing");
   $(this).toggle();
    $(".better").toggle();
+     $( "#log" ).append( "<div>finished</div>" );
 });
