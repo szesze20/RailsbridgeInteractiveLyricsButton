@@ -1,0 +1,14 @@
+$(".better").click(function(){
+  $("h1").toggle(2000,"swing");
+  $(this).toggle();
+  $(".worse").toggle();
+});
+/* can replace h1 with .this */
+/* swing is the transition effect, 1000 is time duration in miliseconds */
+/* if you have multiple buttons and all have the type = button, then use this rather than "h1"*/
+
+$(".worse").click(function(){
+  $("h1").toggle(2000,"swing");
+  $(this).toggle();
+   $(".better").toggle();
+});
